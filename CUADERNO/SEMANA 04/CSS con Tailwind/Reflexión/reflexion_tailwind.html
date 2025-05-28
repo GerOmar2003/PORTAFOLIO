@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reflexión - CSS con Tailwind</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <header class="navbar">
+    <h1><i class="fa-solid fa-wind"></i> Reflexión: CSS con Tailwind</h1>
+    <nav>
+      <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+      <a href="cuaderno.html"><i class="fas fa-book"></i> Cuaderno</a>
+      <a href="#"><i class="fas fa-lightbulb"></i> Temas</a>
+      <a href="#"><i class="fas fa-user"></i> Creador</a>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="contenido">
+    <section class="intro">
+      <h2><i class="fas fa-brain"></i> Reflexión Personal</h2>
+      <p>
+        Aprender Tailwind CSS fue una experiencia muy enriquecedora. A diferencia de Bootstrap, Tailwind permite un control granular sobre el diseño, usando clases utilitarias directamente en el HTML. Esto me permitió construir interfaces limpias, modernas y altamente personalizables sin escribir CSS tradicional.
+      </p>
+      <img src="https://tailwindcss.com/_next/static/media/tailwindcss-logomark.70d2e616.svg" alt="Logo de Tailwind" />
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <i class="fas fa-layer-group"></i>
+        <h3>Clases Utilitarias</h3>
+        <p>Tailwind ofrece clases para margen, padding, colores, tipografía, flexbox y más.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-code"></i>
+        <h3>Diseño en HTML</h3>
+        <p>Con Tailwind, el estilo se escribe en el mismo archivo HTML, facilitando prototipos rápidos.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-wrench"></i>
+        <h3>Personalización Total</h3>
+        <p>Es completamente configurable mediante su archivo `tailwind.config.js`.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Responsivo</h3>
+        <p>Las clases como <code>md:</code>, <code>lg:</code> o <code>xl:</code> permiten crear diseños adaptativos.</p>
+      </div>
+    </section>
+
+    <section class="mensaje">
+      <h2><i class="fas fa-lightbulb"></i> ¿Qué aprendí?</h2>
+      <p>
+        Tailwind cambió mi forma de trabajar el CSS. Si bien al inicio fue desafiante por la gran cantidad de clases, con el tiempo logré diseñar interfaces mucho más rápidas, flexibles y modernas. Me motiva seguir explorando sus plugins y combinaciones con frameworks como React.
+      </p>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>Creado por Omar &copy; 2025 | Proyecto Cuaderno Digital</p>
+  </footer>
+
+</body>
+</html>

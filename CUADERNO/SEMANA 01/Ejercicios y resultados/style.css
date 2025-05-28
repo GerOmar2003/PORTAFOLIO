@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #f0f4f8;
+  color: #333;
+}
+
+header {
+  background: #1e293b;
+  padding: 1rem 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1.5rem;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+  color: #38bdf8;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  color: #1e40af;
+}
+
+.exercise-card {
+  background: #fff;
+  border-left: 5px solid #3b82f6;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.exercise-card:hover {
+  transform: scale(1.02);
+}
+
+.exercise-card h2 {
+  color: #0f172a;
+}
+
+.exercise-card p {
+  font-size: 1.05rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.exercise-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.emmet-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background: #3b82f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.emmet-link:hover {
+  background: #2563eb;
+}
+
+footer {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}

@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #dff9fb, #c7ecee);
+  color: #2c3e50;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #4834d4;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+/* Contenido */
+.contenido {
+  padding: 2rem;
+}
+
+.intro img {
+  max-width: 100px;
+  margin-top: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Tarjetas */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card i {
+  font-size: 2rem;
+  color: #130f40;
+  margin-bottom: 1rem;
+}
+
+/* Repositorio */
+.resultado {
+  margin-top: 2.5rem;
+  background: #dcdde1;
+  padding: 2rem;
+  border-left: 6px solid #4834d4;
+  border-radius: 8px;
+}
+
+.resultado a {
+  color: #4834d4;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.resultado a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #686de0;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

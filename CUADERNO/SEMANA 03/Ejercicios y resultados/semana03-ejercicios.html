@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semana 03 - Ejercicios y Resultados</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <img src="../img/logo.jpg" alt="Logo" class="logo-u" />
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../cuaderno.html">Cuaderno</a></li>
+        <li><a href="#">Semana 03</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="contenido">
+    <h1>Semana 03 - Ejercicios y Resultados</h1>
+
+    <!-- Pregunta 1 -->
+    <section class="bloque">
+      <h2>1. ¿Cuál es el generador Emmet para la siguiente imagen?</h2>
+      <img src="../img/IMAGEN-P1.png" alt="Pregunta 1">
+      <pre><code>nav.nav&gt;ul&gt;li*4&gt;a[href=page$@-1.html]{Link$@-1}</code></pre>
+    </section>
+
+    <!-- Pregunta 2 -->
+    <section class="bloque">
+      <h2>2. ¿Cuál es el generador Emmet para la siguiente imagen?</h2>
+      <img src="../img/IMAGEN-P2.png" alt="Pregunta 2">
+      <pre><code>table.table&gt;thead&gt;tr&gt;th[scope=col]{"#"}+th[scope=col]{First}+th[scope=col]{Second}+th[scope=col]{Three}^tbody&gt;(tr&gt;th[scope=row]{$}+td{Mark}+td{Otto}+td{Jhonson})*3</code></pre>
+    </section>
+
+    <!-- Pregunta 3 -->
+    <section class="bloque">
+      <h2>3. Generador Emmet para estructura semántica con IDs:</h2>
+      <img src="../img/IMAGEN-P3.png" alt="Pregunta 3">
+      <pre><code>.container&gt;header#header{header}+nav#nav{nav}+.main&gt;section#section&gt;article#article{article}^aside#aside{aside}^^footer#footer{footer}</code></pre>
+    </section>
+
+    <!-- Pregunta 4 -->
+    <section class="bloque">
+      <h2>4. Tabla de 4 columnas y 21 filas (IDs numerados del 1 al 20)</h2>
+      <pre><code>table&gt;thead&gt;tr&gt;th{ID}+th{Nombres}+th{Apellidos}+th{Dirección}^tbody&gt;(tr&gt;td{$}+td{Nombre $}+td{Apellido $}+td{Dirección $})*20</code></pre>
+    </section>
+
+    <!-- Pregunta 5 -->
+    <section class="bloque">
+      <h2>5. Tabla de 20 filas y 2 columnas (IDs descendentes)</h2>
+      <pre><code>table&gt;tr#fila$*20&gt;td{Fila $@-1}+td{Fila $@-1}</code></pre>
+    </section>
+
+    <!-- Pregunta 6 -->
+    <section class="bloque">
+      <h2>6. Generador Emmet para estructura básica de desarrollo web</h2>
+      <pre><code>html:5&gt;body&gt;header&gt;nav&gt;ul&gt;li*5&gt;a{Enlace $}^^main&gt;section*3&gt;h2{Sección $}+p{Contenido de la sección $}^^footer&gt;p{Pie de página}</code></pre>
+
+      <pre><code>html:5&gt;head&gt;meta[charset="UTF-8"]+meta[name="viewport" content="width=device-width, initial-scale=1.0"]+title{Mi_Pagina}+link[rel="stylesheet" href="styles.css"]+script[src="script.js"]^body&gt;header.header&gt;nav.nav&gt;ul.menu&gt;li*5&gt;a{Enlace $}^main.main&gt;section.seccion$*3&gt;h2{Sección $}+p{Contenido de la sección $}^footer.footer&gt;p{© 2025 Gerald Omar Fernandez Marcelo}</code></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Gerald Omar Fernandez Marcelo - Semana 03</p>
+  </footer>
+</body>
+</html>

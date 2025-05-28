@@ -1,0 +1,171 @@
+/* ========== ESTILOS GENERALES PARA index.html y cuaderno.html ========== */
+
+/* Reset y base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #f9f9f9, #e0f7fa);
+  color: #333;
+}
+
+/* Barra superior */
+header {
+  background-color: #002f6c;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo-u {
+  width: 60px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+/* Título del portafolio */
+main {
+  padding: 40px 20px;
+}
+
+.titulo-general {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Contenido principal */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  gap: 40px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.info {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+}
+
+.info h1 {
+  font-size: 2.4rem;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 12px 24px;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #005f99;
+}
+
+/* Foto de perfil */
+.foto {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.foto img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #007acc;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  object-position: center;
+}
+
+/* Sección de semanas (antes sesiones) */
+.sesiones {
+  padding: 60px 20px;
+  background-color: #f0f8ff;
+  text-align: center;
+}
+
+.sesiones h2 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 40px;
+}
+
+.grid-sesiones {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tarjeta {
+  background-color: white;
+  border: 2px solid #007acc;
+  padding: 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #003366;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, background-color 0.3s;
+  cursor: pointer;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+  background-color: #e6f7ff;
+}
+
+/* Pie de página */
+footer {
+  background-color: #002f6c;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}

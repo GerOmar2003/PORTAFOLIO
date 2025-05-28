@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Básico - Semana 04</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1><i class="fa-brands fa-js"></i> JavaScript Básico</h1>
+    <nav>
+      <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+      <a href="cuaderno.html"><i class="fas fa-book"></i> Cuaderno</a>
+      <a href="#"><i class="fas fa-code"></i> Temas</a>
+      <a href="#"><i class="fas fa-user"></i> Creador</a>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="contenido">
+    <section class="introduccion">
+      <h2>¿Qué es JavaScript?</h2>
+      <p>JavaScript es un lenguaje de programación que permite agregar interactividad y dinamismo a las páginas web. Es el tercer pilar del desarrollo web junto a HTML y CSS.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Logo JS">
+    </section>
+
+    <section class="temas">
+      <h3><i class="fas fa-lightbulb"></i> Temas Fundamentales de JavaScript</h3>
+      <ul>
+        <li><strong>Variables:</strong> Se definen con <code>let</code>, <code>const</code> o <code>var</code>.</li>
+        <li><strong>Tipos de datos:</strong> String, Number, Boolean, Null, Undefined, Object.</li>
+        <li><strong>Operadores:</strong> Aritméticos, lógicos, de comparación.</li>
+        <li><strong>Estructuras de control:</strong> <code>if</code>, <code>else</code>, <code>switch</code>.</li>
+        <li><strong>Bucles:</strong> <code>for</code>, <code>while</code>, <code>do...while</code>.</li>
+        <li><strong>Funciones:</strong> Declarativas, anónimas, flecha.</li>
+        <li><strong>Eventos:</strong> <code>onclick</code>, <code>onchange</code>, <code>onsubmit</code>, etc.</li>
+        <li><strong>Manipulación del DOM:</strong> Permite modificar el contenido de la página desde JS.</li>
+      </ul>
+    </section>
+
+    <section class="ejemplo">
+      <h3><i class="fas fa-play-circle"></i> Ejemplo Interactivo</h3>
+      <p>Presiona el botón para mostrar un mensaje usando JavaScript:</p>
+      <button onclick="mostrarMensaje()">Haz clic aquí</button>
+      <p id="mensaje" class="mensaje"></p>
+    </section>
+
+    <section class="codigo">
+      <h3><i class="fas fa-code"></i> Código de ejemplo:</h3>
+<pre><code>
+// Mostrar mensaje al hacer clic
+function mostrarMensaje() {
+  document.getElementById("mensaje").innerText = "¡Hola! Este mensaje fue generado por JavaScript.";
+}
+</code></pre>
+    </section>
+
+    <section class="ventajas">
+      <h3><i class="fas fa-check-circle"></i> Ventajas de usar JavaScript</h3>
+      <ul>
+        <li>Permite crear sitios web interactivos y dinámicos.</li>
+        <li>Corre en el navegador, sin necesidad de servidores.</li>
+        <li>Compatible con todos los navegadores modernos.</li>
+        <li>Tiene múltiples frameworks y librerías (React, Vue, Angular).</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Creado por Omar &copy; 2025 | Proyecto Cuaderno Digital</p>
+  </footer>
+
+  <!-- Script de interacción -->
+  <script>
+    function mostrarMensaje() {
+      document.getElementById("mensaje").innerText = "¡Hola! Este mensaje fue generado por JavaScript.";
+    }
+  </script>
+</body>
+</html>

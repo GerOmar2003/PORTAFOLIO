@@ -1,0 +1,89 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #f7df1e;
+  color: #000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+}
+
+.navbar nav a {
+  color: #000;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+/* Contenido */
+.contenido {
+  padding: 2rem;
+}
+
+.introduccion img {
+  max-width: 100px;
+  margin-top: 1rem;
+}
+
+.temas ul, .ventajas ul {
+  list-style-type: square;
+  padding-left: 2rem;
+}
+
+.temas li, .ventajas li {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  background-color: #f7df1e;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.mensaje {
+  font-size: 1.2rem;
+  color: #1d3557;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+pre {
+  background-color: #eee;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #1d1d1d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

@@ -1,0 +1,112 @@
+/* Estilos para semana02-reflexion.html */
+
+/* Reset y fuente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+}
+
+/* Barra de navegación */
+header {
+  background-color: #002f6c;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-u {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+/* Contenido principal */
+main.contenido {
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 40px;
+}
+
+.bloque {
+  background: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-left: 5px solid #007acc;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  line-height: 1.8;
+  font-size: 1.1em;
+}
+
+.tarjetas {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.tarjeta {
+  background-color: #e6f7ff;
+  border: 1px solid #007acc;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.tarjeta h3 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.tarjeta ul {
+  list-style: disc;
+  text-align: left;
+  padding-left: 20px;
+}
+
+footer {
+  background-color: #002f6c;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}

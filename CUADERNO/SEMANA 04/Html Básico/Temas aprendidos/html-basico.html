@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Básico - Semana 04</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="logo.jpg" alt="Logo Universidad" class="logo-u" />
+      <ul class="nav-links">
+        <li><a href="../../index.html">Inicio</a></li>
+        <li><a href="../../cuaderno.html">Cuaderno</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido">
+    <h1><i class="fas fa-code"></i> HTML Básico</h1>
+
+    <section class="bloque">
+      <h2>1. Introducción al HTML y estructura básica de un documento</h2>
+      <h3>1.1 ¿Qué es HTML?</h3>
+      <p>HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas web. Permite estructurar el contenido, como texto, imágenes, enlaces, formularios y más.</p>
+
+      <h3>1.2 Estructura básica</h3>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Título de la Página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hola Mundo&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </section>
+
+    <section class="bloque">
+      <h2>2. Etiquetas principales</h2>
+      <p>Entre las etiquetas más utilizadas están: &lt;h1&gt;-&lt;h6&gt;, &lt;p&gt;, &lt;a&gt;, &lt;img&gt;, &lt;br&gt;, &lt;strong&gt;, &lt;em&gt;, etc.</p>
+      <h3>2.1 Buenas Prácticas</h3>
+      <ul>
+        <li>Usar etiquetas semánticas correctamente</li>
+        <li>Evitar etiquetas obsoletas</li>
+        <li>Validar el código con W3C</li>
+      </ul>
+    </section>
+
+    <section class="bloque">
+      <h2>3. Formato de Texto</h2>
+      <ul>
+        <li>&lt;strong&gt; para texto en negrita importante</li>
+        <li>&lt;em&gt; para énfasis (cursiva)</li>
+        <li>&lt;br&gt; para saltos de línea</li>
+      </ul>
+    </section>
+
+    <section class="bloque">
+      <h2>4. Listas</h2>
+      <p>HTML permite listas ordenadas (&lt;ol&gt;) y no ordenadas (&lt;ul&gt;).</p>
+      <pre><code>&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    </section>
+
+    <section class="bloque">
+      <h2>5. Etiqueta Imagen</h2>
+      <pre><code>&lt;img src="ruta.jpg" alt="Descripción de la imagen" /&gt;</code></pre>
+      <h3>5.1 Atributos</h3>
+      <ul>
+        <li><strong>src:</strong> Fuente de la imagen</li>
+        <li><strong>alt:</strong> Texto alternativo</li>
+      </ul>
+      <h3>5.2 Buenas prácticas</h3>
+      <ul>
+        <li>Optimizar imágenes para web</li>
+        <li>Siempre usar el atributo alt</li>
+      </ul>
+    </section>
+
+    <section class="bloque">
+      <h2>6. Etiqueta Enlaces</h2>
+      <pre><code>&lt;a href="https://ejemplo.com" target="_blank"&gt;Visitar&lt;/a&gt;</code></pre>
+      <h3>6.1 Tipos de Enlaces</h3>
+      <ul>
+        <li>Internos (entre páginas del mismo sitio)</li>
+        <li>Externos (fuera del sitio)</li>
+        <li>Descargas o correos</li>
+      </ul>
+      <h3>6.2 Atributos</h3>
+      <ul>
+        <li><strong>href</strong></li>
+        <li><strong>target</strong></li>
+        <li><strong>rel</strong></li>
+      </ul>
+      <h3>6.3 Buenas prácticas</h3>
+      <ul>
+        <li>Usar enlaces descriptivos</li>
+        <li>Indicar si el enlace abre en una nueva pestaña</li>
+      </ul>
+    </section>
+
+    <section class="bloque">
+      <h2>7. Tablas</h2>
+      <h3>7.1 Etiquetas básicas</h3>
+      <pre><code>&lt;table&gt;
+  &lt;tr&gt;&lt;th&gt;Nombre&lt;/th&gt;&lt;th&gt;Edad&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Ana&lt;/td&gt;&lt;td&gt;22&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+      <h3>7.2 Atributos Principales</h3>
+      <ul>
+        <li><strong>border</strong>, <strong>cellpadding</strong>, <strong>cellspacing</strong></li>
+      </ul>
+      <h3>7.3 Etiquetas &lt;thead&gt;, &lt;tbody&gt; y &lt;tfoot&gt;</h3>
+      <p>Estas permiten organizar la tabla en secciones lógicas.</p>
+      <h3>7.4 Tablas estructuradas</h3>
+      <p>Permiten mayor legibilidad y mantenimiento.</p>
+      <h3>7.5 Tablas anidadas</h3>
+      <p>Son tablas dentro de otras tablas (poco recomendadas).</p>
+      <h3>7.6 Buenas prácticas</h3>
+      <ul>
+        <li>Evitar tablas para maquetado</li>
+        <li>Usar títulos claros</li>
+      </ul>
+    </section>
+
+    <section class="bloque">
+      <h2>8. Formularios básicos</h2>
+      <pre><code>&lt;form action="/enviar" method="post"&gt;
+  &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+  &lt;input type="text" id="nombre" name="nombre" /&gt;
+&lt;/form&gt;</code></pre>
+      <h3>8.1 Elementos básicos</h3>
+      <ul>
+        <li>&lt;input&gt;, &lt;label&gt;, &lt;select&gt;, &lt;textarea&gt;</li>
+      </ul>
+    </section>
+
+    <section class="bloque">
+      <h2>9. Comentarios en HTML</h2>
+      <pre><code>&lt;!-- Esto es un comentario --&gt;</code></pre>
+    </section>
+
+    <section class="bloque">
+      <h2>10. Estructura semántica</h2>
+      <ul>
+        <li>&lt;header&gt;, &lt;footer&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;</li>
+      </ul>
+      <h3>10.1 Ventajas</h3>
+      <ul>
+        <li>Mejora el SEO</li>
+        <li>Más accesible para lectores de pantalla</li>
+      </ul>
+      <h3>10.2 Estilo visual</h3>
+      <p>Permite aplicar estilos más precisos con CSS.</p>
+    </section>
+
+    
+  </main>
+
+  <footer>
+    <p>Creado por Omar &copy; 2025 - Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

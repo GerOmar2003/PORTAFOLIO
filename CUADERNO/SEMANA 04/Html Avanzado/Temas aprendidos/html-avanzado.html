@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Avanzado - Semana 04</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <img src="../img/logo.jpg" alt="Logo" class="logo-u">
+      <ul class="nav-links">
+        <li><a href="../index.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="../cuaderno.html"><i class="fas fa-book"></i> Cuaderno</a></li>
+        <li><a href="#"><i class="fas fa-code"></i> HTML Avanzado</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="contenido">
+    <h1><i class="fas fa-code"></i> HTML Avanzado</h1>
+
+    <section class="bloque">
+      <h2><i class="fas fa-layer-group"></i> 1. Introducción al HTML Avanzado</h2>
+      <p>HTML avanzado incluye técnicas y etiquetas más especializadas que permiten crear estructuras más ricas, accesibles y semánticamente correctas.</p>
+      <ul>
+        <li>Elementos semánticos avanzados</li>
+        <li>Multimedia</li>
+        <li>Integración con SVG y Canvas</li>
+        <li>Formularios enriquecidos</li>
+      </ul>
+      <img src="../img/html-avanzado.png" alt="HTML Avanzado" class="imagen-emmet">
+    </section>
+
+    <section class="bloque">
+      <h2><i class="fas fa-puzzle-piece"></i> 2. Elementos Semánticos Avanzados</h2>
+      <p>HTML5 introdujo etiquetas que mejoran la accesibilidad y la estructura del contenido:</p>
+      <ul>
+        <li><code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code></li>
+      </ul>
+      <pre><code>&lt;section&gt;
+  &lt;article&gt;
+    &lt;h2&gt;Título&lt;/h2&gt;
+    &lt;p&gt;Contenido...&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/section&gt;</code></pre>
+    </section>
+
+    <section class="bloque">
+      <h2><i class="fas fa-photo-video"></i> 3. Multimedia</h2>
+      <p>Permite insertar contenido de audio y video de forma nativa:</p>
+      <ul>
+        <li><code>&lt;audio&gt;</code> y <code>&lt;video&gt;</code> con atributos como <code>controls</code>, <code>autoplay</code>, <code>loop</code>.</li>
+      </ul>
+      <pre><code>&lt;video controls width="300"&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  Tu navegador no soporta video.
+&lt;/video&gt;</code></pre>
+    </section>
+
+    <section class="bloque">
+      <h2><i class="fas fa-pen-nib"></i> 4. Gráficos SVG y Canvas</h2>
+      <p>Permiten gráficos vectoriales (SVG) y animaciones o juegos (Canvas):</p>
+      <pre><code>&lt;svg width="100" height="100"&gt;
+  &lt;circle cx="50" cy="50" r="40" stroke="blue" stroke-width="4" fill="yellow" /&gt;
+&lt;/svg&gt;</code></pre>
+      <img src="../img/svg-ejemplo.png" alt="Ejemplo SVG" class="imagen-emmet">
+    </section>
+
+    <section class="bloque">
+      <h2><i class="fas fa-wpforms"></i> 5. Formularios Avanzados</h2>
+      <p>Se utilizan nuevos tipos de campos de entrada y validaciones automáticas:</p>
+      <ul>
+        <li><code>type="email"</code>, <code>type="date"</code>, <code>type="range"</code></li>
+        <li>Atributos: <code>required</code>, <code>pattern</code>, <code>placeholder</code></li>
+      </ul>
+      <pre><code>&lt;form&gt;
+  &lt;label&gt;Correo: &lt;input type="email" required&gt;&lt;/label&gt;
+  &lt;label&gt;Edad: &lt;input type="range" min="18" max="100"&gt;&lt;/label&gt;
+&lt;/form&gt;</code></pre>
+    </section>
+
+    <section class="bloque">
+      <h2><i class="fas fa-cogs"></i> 6. Atributos Personalizados (data-*)</h2>
+      <p>Permiten agregar información personalizada a los elementos HTML:</p>
+      <pre><code>&lt;div data-usuario="omar123"&gt;Hola Omar&lt;/div&gt;</code></pre>
+    </section>
+
+    <section class="bloque">
+      <h2><i class="fas fa-terminal"></i> 7. Integración con JavaScript</h2>
+      <p>HTML avanzado trabaja de la mano con JavaScript para crear interfaces dinámicas:</p>
+      <ul>
+        <li>Eventos: <code>onclick</code>, <code>onchange</code>, etc.</li>
+        <li>Manipulación del DOM</li>
+      </ul>
+    </section>
+
+    <section class="bloque">
+      <h2><i class="fas fa-lightbulb"></i> 8. Buenas Prácticas en HTML Avanzado</h2>
+      <ul>
+        <li>Usar etiquetas semánticas correctamente</li>
+        <li>Validar HTML</li>
+        <li>Evitar atributos obsoletos</li>
+        <li>Comentar adecuadamente</li>
+      </ul>
+    </section>
+
+    <section class="bloque">
+      <h2><i class="fas fa-clipboard-check"></i> 9. Ejercicio Final</h2>
+      <p>Crea una página web que incluya:</p>
+      <ul>
+        <li>Estructura semántica</li>
+        <li>Formulario con validaciones</li>
+        <li>Audio/video</li>
+        <li>Gráfico SVG</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Creado por Omar | Semana 04 - HTML Avanzado</p>
+  </footer>
+</body>
+</html>

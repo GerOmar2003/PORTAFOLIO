@@ -1,0 +1,14 @@
+/* Archivo personalizado para estilos adicionales */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+code {
+  background-color: #f3f4f6;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  color: #7c3aed;
+  font-weight: 500;
+}

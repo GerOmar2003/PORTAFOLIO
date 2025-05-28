@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Semana 03 - Emmet Avanzado</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="logo.jpg" alt="Logo" class="logo-u" />
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="cuaderno.html"><i class="fas fa-book"></i> Cuaderno</a></li>
+        <li><a href="#"><i class="fas fa-code"></i> Semana 03</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido">
+    <h1><i class="fas fa-code"></i> Semana 03: Dominando Emmet</h1>
+
+    <div class="bloque">
+      <h2><i class="fas fa-bolt"></i> ¿Qué es Emmet?</h2>
+      <p>Emmet es una herramienta poderosa que permite escribir código HTML y CSS de manera rápida mediante el uso de abreviaciones que se expanden automáticamente. Es ideal para desarrolladores front-end que buscan velocidad y eficiencia.</p>
+      <img src="https://www.eniun.com/wp-content/uploads/2017/12/abrevaciones-emmet.jpg" alt="Ejemplo de Emmet" class="imagen-emmet">
+    </div>
+
+    <div class="bloque">
+      <h2><i class="fas fa-keyboard"></i> ¿Por qué usar Emmet?</h2>
+      <ul>
+        <li>Ahorra tiempo al escribir estructuras repetitivas.</li>
+        <li>Reduce errores de sintaxis.</li>
+        <li>Mejora el flujo de trabajo al escribir HTML y CSS.</li>
+        <li>Compatible con VS Code, Sublime Text, Atom, entre otros.</li>
+      </ul>
+    </div>
+
+    <div class="bloque">
+      <h2><i class="fas fa-code-branch"></i> Sintaxis común de Emmet</h2>
+      <div class="tarjetas">
+        <div class="tarjeta">
+          <h3>Elemento con clase</h3>
+          <p><strong>div.caja</strong> → <code>&lt;div class="caja"&gt;&lt;/div&gt;</code></p>
+        </div>
+        <div class="tarjeta">
+          <h3>Elemento con ID</h3>
+          <p><strong>div#cabecera</strong> → <code>&lt;div id="cabecera"&gt;&lt;/div&gt;</code></p>
+        </div>
+        <div class="tarjeta">
+          <h3>Multiplicación</h3>
+          <p><strong>ul>li*5</strong> → 5 elementos <code>&lt;li&gt;</code> dentro de una <code>&lt;ul&gt;</code></p>
+        </div>
+        <div class="tarjeta">
+          <h3>Atributos</h3>
+          <p><strong>input[type=text][placeholder=Nombre]</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bloque">
+      <h2><i class="fas fa-layer-group"></i> Combinaciones útiles</h2>
+      <ul>
+        <li><strong>header+main+footer</strong> → Estructura básica de una página.</li>
+        <li><strong>div.container>section.box*3</strong> → Crea un contenedor con 3 secciones internas.</li>
+        <li><strong>nav>ul>li.item$*4</strong> → Añade clases numeradas automáticamente (<code>item1</code>, <code>item2</code>...)</li>
+      </ul>
+    </div>
+
+    <section class="bloque">
+      <h2><i class="fas fa-code"></i> Abreviaciones comunes</h2>
+      <div class="tarjetas">
+        <div class="tarjeta">
+          <h3>div.container</h3>
+          <code>&lt;div class="container"&gt;&lt;/div&gt;</code>
+        </div>
+        <div class="tarjeta">
+          <h3>ul>li*3</h3>
+          <code>&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;</code>
+        </div>
+        <div class="tarjeta">
+          <h3>a{Click aquí}</h3>
+          <code>&lt;a&gt;Click aquí&lt;/a&gt;</code>
+        </div>
+      </div>
+    </section>
+
+    <!-- NUEVA INFORMACIÓN AÑADIDA -->
+    <section class="bloque">
+      <h2><i class="fas fa-book"></i> II. Fundamento Teórico</h2>
+
+      <h3>2.1. Plugin Emmet</h3>
+      <p>Es una herramienta que utiliza operadores para agilizar tu proceso de desarrollo al escribir código HTML y CSS, más rápido y ahorrándote errores tipográficos.</p>
+      <table>
+        <thead>
+          <tr><th>Operadores</th><th>Descripción</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>&gt;</td><td>Hijo (dentro de...)</td></tr>
+          <tr><td>+</td><td>Hermano (al lado de...)</td></tr>
+          <tr><td>^</td><td>Salir del Tag actual</td></tr>
+          <tr><td>*</td><td>Multiplicador (repite n veces)</td></tr>
+          <tr><td>()</td><td>Agrupador</td></tr>
+          <tr><td>[attr]</td><td>Añadir Atributos al Tag</td></tr>
+          <tr><td>{texto}</td><td>Añadir contenido al Tag</td></tr>
+          <tr><td>$</td><td>Añadir número de iteración</td></tr>
+          <tr><td>.</td><td>Añadir class</td></tr>
+          <tr><td>#</td><td>Añadir id</td></tr>
+        </tbody>
+      </table>
+
+      <h4>Etiquetas hermanos e hijos</h4>
+      <pre><code>section+section →
+&lt;section&gt;&lt;/section&gt;
+&lt;section&gt;&lt;/section&gt;
+
+ul&gt;li →
+&lt;ul&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+      <h4>Multiplicación de etiquetas</h4>
+      <pre><code>p*3 →
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+
+ul&gt;li*3 →
+&lt;ul&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+      <h4>Agrupar etiquetas</h4>
+      <code>nav#menu&gt;ul.nav-menu&gt;(li.nav-menu-items&gt;a)*3</code>
+
+      <h4>Definir contenido</h4>
+      <code>h1{Hola}</code>
+
+      <h4>Clases</h4>
+      <pre><code>div.wrapper → &lt;div class="wrapper"&gt;&lt;/div&gt;
+h1.header.center → &lt;h1 class="header center"&gt;&lt;/h1&gt;</code></pre>
+
+      <h4>ID’s</h4>
+      <code>div#hero → &lt;div id="hero"&gt;&lt;/div&gt;</code>
+
+      <h4>Atributos</h4>
+      <code>img[src="cat.jpg"][alt="foto de gato"] → &lt;img src="cat.jpg" alt="foto de gato" /&gt;</code>
+
+      <h4>Enumerar iteración $</h4>
+      <pre><code>ul&gt;li{Item $}*3 →
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    </section>
+
+    <section class="bloque">
+      <h3>2.2. Atajos de Teclado de Visual Studio Code</h3>
+
+      <h4>General</h4>
+      <ul>
+        <li><strong>Ctrl+Shift+P, F1</strong> — Mostrar paleta de comandos</li>
+        <li><strong>Ctrl+P</strong> — Buscar archivo</li>
+        <li><strong>Ctrl+Shift+N</strong> — Nueva ventana</li>
+        <li><strong>Ctrl+Shift+W</strong> — Cerrar ventana</li>
+        <li><strong>Ctrl+,</strong> — Configuración</li>
+        <li><strong>Ctrl+K Ctrl+S</strong> — Atajos de teclado</li>
+      </ul>
+
+      <h4>Edición Básica</h4>
+      <ul>
+        <li><strong>Alt + flecha</strong> — Mover línea</li>
+        <li><strong>Alt + Shift + flecha</strong> — Duplicar línea</li>
+        <li><strong>Ctrl + Del</strong> — Borrar palabra</li>
+        <li><strong>Ctrl + Shift + K</strong> — Borrar línea</li>
+        <li><strong>Ctrl + Enter</strong> — Nueva línea abajo</li>
+        <li><strong>Ctrl + Shift + Enter</strong> — Nueva línea arriba</li>
+        <li><strong>Ctrl + L</strong> — Seleccionar palabra</li>
+        <li><strong>Ctrl + Shift + L</strong> — Selección múltiple de palabra</li>
+      </ul>
+
+      <h4>Multicursor</h4>
+      <ul>
+        <li><strong>Alt + click</strong> — Múltiples cursores</li>
+        <li><strong>Ctrl + Shift + Alt + flecha</strong> — Múltiples cursores por teclado</li>
+        <li><strong>Ctrl + D</strong> — Seleccionar palabra igual</li>
+        <li><strong>Ctrl + U</strong> — Deseleccionar último</li>
+        <li><strong>Shift + Alt + I</strong> — Insertar multicursor al final de líneas</li>
+        <li><strong>Ctrl + Shift + L</strong> — Selección múltiple con cursores</li>
+      </ul>
+    </section>
+  </main>
+
+    <div class="bloque">
+      <h2><i class="fas fa-lightbulb"></i> Trucos avanzados de Emmet</h2>
+      <ul>
+        <li><strong>{texto}</strong>: Permite insertar texto directamente. Ej: <code>p{Hola mundo}</code></li>
+        <li><strong>^</strong>: Sube un nivel en la jerarquía del árbol HTML. Ej: <code>div>ul>li^p</code></li>
+        <li><strong>()</strong>: Agrupa elementos para mayor control. Ej: <code>(header>nav)+main+footer</code></li>
+        <li><strong>$</strong>: Inserta números secuenciales. Ej: <code>ul>li.item$*3</code></li>
+      </ul>
+    </div>
+
+    <div class="bloque">
+      <h2><i class="fas fa-book-open"></i> Buenas prácticas</h2>
+      <ul>
+        <li>Combina Emmet con snippets y autoformato de tu editor.</li>
+        <li>No abuses de anidaciones profundas, mantén el código limpio.</li>
+        <li>Verifica el resultado expandido antes de guardar.</li>
+      </ul>
+    </div>
+
+    <div class="bloque">
+      <h2><i class="fas fa-link"></i> Recursos recomendados</h2>
+      <ul>
+        <li><a href="https://docs.emmet.io/cheat-sheet/" target="_blank"><i class="fas fa-external-link-alt"></i> Emmet Cheat Sheet Oficial</a></li>
+        <li><a href="https://code.visualstudio.com/docs/editor/emmet" target="_blank"><i class="fas fa-external-link-alt"></i> Documentación en VS Code</a></li>
+        <li><a href="https://emmet.io/" target="_blank"><i class="fas fa-external-link-alt"></i> Sitio Oficial de Emmet</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>Creado por Omar • Semana 03</p>
+  </footer>
+</body>
+</html>

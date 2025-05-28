@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS con Tailwind - Semana 04</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body class="bg-gradient-to-r from-blue-100 to-purple-100 min-h-screen font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-blue-700 text-white p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold"><i class="fa-brands fa-tumblr"></i> CSS con Tailwind</h1>
+    <nav class="space-x-4">
+      <a href="index.html" class="hover:underline"><i class="fas fa-home"></i> Inicio</a>
+      <a href="cuaderno.html" class="hover:underline"><i class="fas fa-book"></i> Cuaderno</a>
+      <a href="#" class="hover:underline"><i class="fas fa-code"></i> Temas</a>
+      <a href="#" class="hover:underline"><i class="fas fa-user"></i> Creador</a>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="p-6">
+    <section class="text-center">
+      <h2 class="text-3xl font-bold text-blue-800 mb-2">¿Qué es Tailwind CSS?</h2>
+      <p class="text-lg text-gray-700 mb-4">Tailwind es un framework de CSS de utilidad primero que permite crear interfaces modernas rápidamente mediante clases directamente en HTML.</p>
+      <img src="https://tailwindcss.com/_next/static/media/mark.6bab4c2b.svg" alt="Tailwind Logo" class="mx-auto w-24 mb-6">
+    </section>
+
+    <section class="mb-8">
+      <h3 class="text-2xl font-semibold text-purple-800"><i class="fas fa-plug"></i> ¿Cómo se instala?</h3>
+      <p class="text-gray-700 mt-2">Puedes usar Tailwind directamente desde CDN para prototipos o instalarlo con NPM para proyectos personalizados:</p>
+      <ul class="list-disc ml-6 text-gray-700">
+        <li>Desde CDN: <code>&lt;link href="https://cdn.tailwindcss.com" rel="stylesheet"&gt;</code></li>
+        <li>Instalación: <code>npm install -D tailwindcss</code> y configuración con PostCSS</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h3 class="text-2xl font-semibold text-purple-800"><i class="fas fa-toolbox"></i> Filosofía Utility-First</h3>
+      <p class="text-gray-700">Tailwind utiliza clases pequeñas y específicas como <code>bg-blue-500</code>, <code>text-xl</code> o <code>p-4</code>, que permiten construir cualquier diseño sin necesidad de escribir CSS personalizado.</p>
+      <div class="bg-white shadow-md rounded p-4 mt-4">
+        <p class="text-gray-700">Ejemplo:</p>
+        <div class="bg-blue-500 text-white p-4 rounded shadow mt-2">
+          ¡Este es un botón con Tailwind!
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h3 class="text-2xl font-semibold text-purple-800"><i class="fas fa-layer-group"></i> Sistema de diseño responsivo</h3>
+      <p class="text-gray-700">Tailwind incorpora breakpoints como <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code> para crear interfaces adaptables:</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+        <div class="bg-purple-200 p-4 text-center rounded">Columna 1</div>
+        <div class="bg-purple-300 p-4 text-center rounded">Columna 2</div>
+        <div class="bg-purple-400 p-4 text-center rounded">Columna 3</div>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h3 class="text-2xl font-semibold text-purple-800"><i class="fas fa-magic"></i> Componentes personalizados</h3>
+      <p class="text-gray-700">Aunque Tailwind no trae componentes predefinidos como Bootstrap, puedes crear los tuyos fácilmente o usar bibliotecas como Flowbite, DaisyUI o Headless UI.</p>
+    </section>
+
+    <section class="mb-8">
+      <h3 class="text-2xl font-semibold text-purple-800"><i class="fas fa-lightbulb"></i> Ventajas de usar Tailwind</h3>
+      <ul class="list-disc ml-6 text-gray-700">
+        <li>Alta personalización sin escribir CSS adicional</li>
+        <li>Diseño responsivo con clases específicas</li>
+        <li>Rendimiento optimizado con PurgeCSS</li>
+        <li>Ideal para diseños a medida</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h3 class="text-2xl font-semibold text-purple-800"><i class="fas fa-code-branch"></i> Ejemplo de botón con interacción</h3>
+      <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300">
+        ¡Click aquí!
+      </button>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-4">
+    <p>Creado por Omar &copy; 2025 | Proyecto Cuaderno Digital</p>
+  </footer>
+</body>
+</html>

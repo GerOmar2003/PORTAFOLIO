@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS con Bootstrap - Semana 04</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="navbar bg-primary navbar-dark px-4">
+    <h1 class="text-white"><i class="fa-brands fa-bootstrap"></i> CSS con Bootstrap</h1>
+    <ul class="nav">
+      <li class="nav-item"><a class="nav-link text-white" href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="cuaderno.html"><i class="fas fa-book"></i> Cuaderno</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#"><i class="fas fa-code"></i> Temas</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#"><i class="fas fa-user"></i> Creador</a></li>
+    </ul>
+  </header>
+
+  <main class="container my-5">
+    <section class="text-center">
+      <h2>¿Qué es Bootstrap?</h2>
+      <p class="lead">Bootstrap es un framework de CSS desarrollado por Twitter que facilita el diseño web responsive con componentes ya listos y un sistema de rejilla.</p>
+      <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" class="img-fluid mb-4" alt="Logo Bootstrap" width="120">
+    </section>
+
+    <section>
+      <h3><i class="fas fa-layer-group"></i> Sistema de Grid</h3>
+      <p>Bootstrap utiliza un sistema de 12 columnas que permite crear diseños adaptables. Puedes usar clases como <code>.row</code> y <code>.col</code> para organizar tu contenido.</p>
+      <div class="row text-center">
+        <div class="col-md-4 bg-light p-3 border">Columna 1</div>
+        <div class="col-md-4 bg-secondary text-white p-3 border">Columna 2</div>
+        <div class="col-md-4 bg-light p-3 border">Columna 3</div>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <h3><i class="fas fa-cogs"></i> Componentes de Bootstrap</h3>
+      <ul>
+        <li><strong>Botones:</strong> <code>btn btn-primary</code>, <code>btn btn-danger</code>, etc.</li>
+        <li><strong>Alertas:</strong> <code>alert alert-success</code>, <code>alert alert-warning</code></li>
+        <li><strong>Tarjetas:</strong> <code>card</code> para mostrar contenido agrupado</li>
+        <li><strong>Formulario:</strong> clases como <code>form-control</code>, <code>form-group</code></li>
+        <li><strong>Navbar:</strong> navegación moderna con <code>navbar</code></li>
+      </ul>
+    </section>
+
+    <section class="mt-4">
+      <h3><i class="fas fa-wrench"></i> Utilidades</h3>
+      <p>Bootstrap incluye clases utilitarias para márgenes (<code>m-3</code>), padding (<code>p-2</code>), colores de fondo, alineación, visibilidad, entre otros.</p>
+      <div class="bg-info p-3 text-white rounded">Ejemplo de clase utilitaria con fondo info</div>
+    </section>
+
+    <section class="mt-4">
+      <h3><i class="fas fa-mobile-alt"></i> Responsive y Breakpoints</h3>
+      <p>Bootstrap se adapta automáticamente a distintos tamaños de pantalla con clases como <code>col-sm-</code>, <code>col-md-</code>, <code>col-lg-</code>.</p>
+    </section>
+
+    <section class="mt-4">
+      <h3><i class="fas fa-code"></i> Ejemplo de Tarjeta Bootstrap</h3>
+      <div class="card mx-auto" style="width: 18rem;">
+        <img src="https://getbootstrap.com/docs/5.3/assets/img/bootstrap-icons.png" class="card-img-top" alt="Ejemplo Tarjeta">
+        <div class="card-body">
+          <h5 class="card-title">Componente Card</h5>
+          <p class="card-text">Una forma simple de mostrar contenido agrupado visualmente usando Bootstrap.</p>
+          <a href="#" class="btn btn-primary">Ver más</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5 bg-light p-4 rounded">
+      <h3><i class="fas fa-lightbulb"></i> ¿Sabías qué?</h3>
+      <p>Bootstrap 5 ya no depende de jQuery y ahora puedes integrarlo fácilmente solo con HTML y CSS.</p>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>Creado por Omar &copy; 2025 | Proyecto Cuaderno Digital</p>
+  </footer>
+</body>
+</html>

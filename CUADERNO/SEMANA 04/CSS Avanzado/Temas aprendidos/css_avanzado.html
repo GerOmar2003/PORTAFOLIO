@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Avanzado - Semana 04</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1><i class="fa-brands fa-css3-alt"></i> CSS Avanzado</h1>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="cuaderno.html"><i class="fas fa-book"></i> Cuaderno</a></li>
+        <li><a href="#"><i class="fas fa-code"></i> Temas</a></li>
+        <li><a href="#"><i class="fas fa-user"></i> Creador</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>¿Qué es CSS Avanzado?</h2>
+      <p>CSS Avanzado nos permite construir interfaces modernas, interactivas y adaptables. Aquí exploramos técnicas como Flexbox, Grid, variables, animaciones, media queries y más.</p>
+      <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="CSS Avanzado" class="logo-css" />
+    </section>
+
+    <section class="content">
+      <h2>Temas Avanzados de CSS</h2>
+      <div class="card-grid">
+
+        <div class="card">
+          <h3><i class="fas fa-grip-horizontal"></i> Flexbox</h3>
+          <p>Permite distribuir elementos de forma eficiente en contenedores flexibles. Ideal para diseño responsive.</p>
+          <pre><code>display: flex;
+justify-content: center;
+align-items: center;</code></pre>
+        </div>
+
+        <div class="card">
+          <h3><i class="fas fa-th-large"></i> CSS Grid</h3>
+          <p>Una herramienta poderosa para crear diseños complejos de dos dimensiones.</p>
+          <pre><code>display: grid;
+grid-template-columns: repeat(3, 1fr);</code></pre>
+        </div>
+
+        <div class="card">
+          <h3><i class="fas fa-wave-square"></i> Animaciones y Transiciones</h3>
+          <p>CSS permite crear efectos visuales con `transition` y `@keyframes`.</p>
+          <pre><code>transition: all 0.3s ease;
+@keyframes mover {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100px); }
+}</code></pre>
+        </div>
+
+        <div class="card">
+          <h3><i class="fas fa-magic"></i> Variables CSS</h3>
+          <p>Permiten reutilizar valores dentro de un archivo CSS, facilitando el mantenimiento del código.</p>
+          <pre><code>:root {
+  --color-principal: #1e40af;
+}
+h1 {
+  color: var(--color-principal);
+}</code></pre>
+        </div>
+
+        <div class="card">
+          <h3><i class="fas fa-mobile-alt"></i> Media Queries</h3>
+          <p>Ayudan a adaptar el diseño a distintos tamaños de pantalla.</p>
+          <pre><code>@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}</code></pre>
+        </div>
+
+        <div class="card">
+          <h3><i class="fas fa-paint-brush"></i> Pseudo-clases y Pseudo-elementos</h3>
+          <p>Permiten aplicar estilos especiales a partes del documento o a eventos del usuario.</p>
+          <pre><code>a:hover { color: red; }
+p::first-letter { font-size: 2em; }</code></pre>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="image-section">
+      <h2>Ejemplo Visual</h2>
+      <img src="https://miro.medium.com/v2/resize:fit:1400/1*4MCb6q9-czUz_Uzt1rV_9Q.png" alt="CSS Grid vs Flexbox" />
+    </section>
+
+    <section class="extra">
+      <h2>¿Sabías que…?</h2>
+      <p>CSS sigue evolucionando con nuevas características como `container queries`, `:has()` y `subgrid`.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Creado por Omar &copy; 2025 | Proyecto Cuaderno Digital</p>
+  </footer>
+</body>
+</html>
