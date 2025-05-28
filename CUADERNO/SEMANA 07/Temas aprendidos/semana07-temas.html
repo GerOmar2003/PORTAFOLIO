@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temas Aprendidos - Semana 07: Hooks en React</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1><i class="fas fa-plug"></i> Semana 07: Hooks en React</h1>
+    <nav>
+      <a href="../../index.html"><i class="fas fa-home"></i> Inicio</a>
+      <a href="../../cuaderno.html"><i class="fas fa-book"></i> Cuaderno</a>
+    </nav>
+  </header>
+
+  <main class="contenido">
+    <section class="intro">
+      <h2><i class="fas fa-code"></i> ¿Qué son los Hooks en React?</h2>
+      <p>
+        Los <strong>Hooks</strong> son funciones que permiten a los componentes funcionales de React tener estado, manejar efectos secundarios, contexto y otras características sin necesidad de clases. Se introdujeron en React 16.8 y revolucionaron la forma de escribir componentes.
+      </p>
+    </section>
+
+    <section class="temas">
+      <h2><i class="fas fa-list"></i> Principales Hooks</h2>
+      <ul>
+        <li><strong>useState:</strong> Maneja el estado local del componente.</li>
+        <li><strong>useEffect:</strong> Ejecuta efectos secundarios como peticiones a APIs.</li>
+        <li><strong>useContext:</strong> Accede a datos globales sin props.</li>
+        <li><strong>useReducer:</strong> Ideal para gestionar estados complejos.</li>
+        <li><strong>useRef:</strong> Crea referencias a elementos del DOM.</li>
+      </ul>
+    </section>
+
+    <section class="tarjetas">
+      <div class="card">
+        <i class="fas fa-toggle-on"></i>
+        <h3>useState</h3>
+        <p>Permite agregar estado a los componentes funcionales con la sintaxis <code>const [state, setState] = useState(valorInicial)</code>.</p>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-sync"></i>
+        <h3>useEffect</h3>
+        <p>Permite ejecutar código después del renderizado. Muy útil para peticiones y timers.</p>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-network-wired"></i>
+        <h3>useContext</h3>
+        <p>Permite compartir datos entre componentes sin necesidad de pasar props manualmente.</p>
+      </div>
+    </section>
+
+    <section class="extra">
+      <h2><i class="fas fa-lightbulb"></i> Buenas prácticas</h2>
+      <ul>
+        <li>Nombrar Custom Hooks iniciando con <code>use</code> (ej. <code>useFetch</code>).</li>
+        <li>Encapsular una única lógica por Custom Hook.</li>
+        <li>Controlar cuidadosamente las dependencias en <code>useEffect</code>.</li>
+        <li>Escribir pruebas unitarias para tus hooks personalizados.</li>
+        <li>Documentar su propósito y uso.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Cuaderno Digital de Omar – Semana 07</p>
+  </footer>
+</body>
+</html>
